@@ -15,9 +15,6 @@ async function bootstrap() {
     }),
   );
 
-  // Optional: Enable CORS if it will be accessed from different domains
-  // app.enableCors();
-
   await app.listen(3000); // Or your preferred port
   console.log(`Application is running on: ${await app.getUrl()}`);
 }
